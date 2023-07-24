@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 // Declare functions
-void calculateTriangularNumber (int);
+int calculateTriangularNumber (int);
 
 int main(void) {
 
@@ -16,7 +16,7 @@ int main(void) {
 }
 
 // Define functions
-void calculateTriangularNumber (int number) {
+int calculateTriangularNumber (int number) {
   // Initialize triangular number
   int triangularNumber = 0;
 
@@ -27,4 +27,7 @@ void calculateTriangularNumber (int number) {
 
   // Print triangular number
   printf ("Triangular number %d is %d\n", number, triangularNumber);
+
+  // Return triangular number
+  return triangularNumber;
 }
